@@ -17,6 +17,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="main.js" defer></script>
     <link rel="stylesheet" href="style.css" />
     <title>Rock Paper Scissors</title>
   </head>
@@ -33,35 +34,37 @@
         </div>
         <div class="game-info">
           <p>
-            Computer <span class="computer-score">0</span>
-            <span class="player-score">0</span> Player
+            Computer 
+            <span id="computer-score">0</span>
+            :
+            <span id="player-score">0</span> Player
           </p>
         </div>
       </header>
       <section class="gameplay computer-gameplay">
         <p>Computer</p>
         <div class="gameplay-wrapper">
-          <span class="computer-emoji">&#x270A;</span>
+          <span id="computer-emoji">&#x270A;</span>
         </div>
       </section>
       <section class="gameplay-info">
-        <p class="gameplay-info-text">Currently Draw</p>
+        <p id="gameplay-info-text">Currently Draw</p>
       </section>
       <section class="gameplay player-gameplay">
         <p>Player</p>
         <div class="gameplay-wrapper">
-          <span class="player-emoji">&#x270A;</span>
+          <span id="player-emoji">&#x270A;</span>
         </div>
       </section>
       <section class="game-actions">
         <div class="game-actions-wrapper">
-          <span class="rock-emoji">&#x270A;</span>
+          <span class="rock-emoji" onclick="playGame('rock')">&#x270A;</span>
         </div>
         <div class="game-actions-wrapper">
-          <span class="paper-emoji">&#x270B;</span>
+          <span class="paper-emoji" onclick="playGame('paper')">&#x270B;</span>
         </div>
         <div class="game-actions-wrapper">
-          <span class="scissors-emoji">&#9996;</span>
+          <span class="scissors-emoji" onclick="playGame('scissors')">&#9996;</span>
         </div>
       </section>
     </section>
