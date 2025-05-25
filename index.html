@@ -10,20 +10,61 @@
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Rock Paper Scissors</title>
   </head>
   <body>
     <section class="game-body">
       <header class="game-header">
         <div class="details">
-            <p>
-                &copy; 2025
-                <a href="https://github.com/NathanaelMutua" class="name-github-link">Nathanael Mutua</a>
-            </p>
+          <p>
+            &copy; 2025
+            <a href="https://github.com/NathanaelMutua" class="name-github-link"
+              >Nathanael Mutua</a
+            >
+          </p>
         </div>
-        <div class="game-score">Computer 0 0 Player</div>
+        <div class="game-info">
+          <i class="fa-regular fa-moon mode-toggle"></i>
+          <p>
+            Computer <span class="computer-score">0</span>
+            <span class="player-score">0</span> Player
+          </p>
+        </div>
       </header>
+      <section class="gameplay computer-gameplay">
+        <p>Computer</p>
+        <div class="gameplay-wrapper">
+          <span class="computer-emoji">&#x270A;</span>
+        </div>
+      </section>
+      <section class="gameplay-info">
+        <p class="gameplay-info-text">Currently Draw</p>
+      </section>
+      <section class="gameplay player-gameplay">
+        <p>Player</p>
+        <div class="gameplay-wrapper">
+          <span class="player-emoji">&#x270A;</span>
+        </div>
+      </section>
+      <section class="game-actions">
+        <div class="game-actions-wrapper">
+          <span class="rock-emoji">&#x270A;</span>
+        </div>
+        <div class="game-actions-wrapper">
+          <span class="paper-emoji">&#x270B;</span>
+        </div>
+        <div class="game-actions-wrapper">
+          <span class="scissors-emoji">&#9996;</span>
+        </div>
+      </section>
     </section>
   </body>
 </html>

@@ -1,34 +1,110 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-    font-size: 62.5%;
-    font-family: "Press Start 2P", system-ui;
-    color: #ffffff;
+:root {
+  --color-1: #161d6f;
+  --color-2: #5fcec6;
+  --color-3: #c7ffd8;
+  --color-4: #f6f6f6;
 }
 
-:root{
-    --color-1: #161D6F;
-    --color-2: #98DED9;
-    --color-3: #C7FFD8;
-    --color-4: #F6F6F6;
+html {
+  font-size: 62.5%;
+  font-family: "Press Start 2P", system-ui;
+  color: var(--color-4);
 }
 
-.game-body{
-    background-color: var(--color-2);
-    height: 100vh;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
+.game-body {
+  background-color: var(--color-2);
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
 }
 
-.game-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    font-size: 1.4rem;
+/* start of header section styling */
+.game-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
 }
+
+.details {
+  font-size: 1rem;
+}
+
+.game-info {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.mode-toggle {
+  font-size: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 2px solid var(--color-4);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+/* end of header section styling */
+
+/* start of gameplay (player & computer) styling */
+.gameplay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 0rem;
+  font-size: 2rem;
+}
+
+.gameplay p {
+  margin-top: 0.8rem;
+}
+
+.gameplay-wrapper {
+  font-size: 10rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--color-4);
+  border: 2px solid var(--color-1);
+  border-radius: 5rem;
+  border-top-left-radius: 0;
+  margin-top: 1rem;
+}
+
+.player-gameplay p {
+  margin-top: 0;
+}
+/* end of gameplay styling */
+
+/* start of gameplay-info-text styling */
+.gameplay-info {
+  background-color: var(--color-1);
+  padding: 1rem 0;
+  font-size: 1.6rem;
+  text-align: center;
+}
+/* end of gameplay-info-text styling */
+
+/* start of game-actions styling */
+.game-actions {
+  display: flex;
+  justify-content: center;
+  font-size: 6rem;
+  gap: 1rem;
+}
+
+.game-actions-wrapper {
+  background-color: var(--color-3);
+  border-radius: 2rem;
+  cursor: pointer;
+}
+/* end of game-actions styling */
