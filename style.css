@@ -10,16 +10,20 @@
   --color-3: #c7ffd8;
   --color-4: #f6f6f6;
   --color-6: #97ebe5;
+  --game-font: "Press Start 2P", system-ui;
 }
 
 html {
   font-size: 62.5%;
-  font-family: "Press Start 2P", system-ui;
+  font-family: var(--game-font);
   color: var(--color-4);
 }
 
 .game-body {
   background-color: var(--color-2);
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
   height: 100vh;
   margin-left: auto;
   margin-right: auto;
@@ -58,10 +62,6 @@ html {
   font-size: 2rem;
 }
 
-.computer-gameplay{
-    margin-top: 2.45rem;
-}
-
 .gameplay p {
   margin-top: 0.8rem;
 }
@@ -92,10 +92,11 @@ html {
 
 /* start of game-actions styling */
 .game-actions {
+  background-color: var(--color-2);
   display: flex;
   justify-content: center;
   margin-top: 1rem;
-  padding-bottom: 2.7rem;
+  padding-bottom: 1.5rem;
   font-size: 4rem;
   gap: 1.3rem;
 }
@@ -115,11 +116,39 @@ html {
 }
 /* end of game-actions styling */
 
+/* start restart button styling */
+.game-reset-btn{
+  padding-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-2);
+}
+
+#reset-btn{
+  text-align: center;
+  padding: .8rem .8rem;
+  border: none;
+  border-radius: 1rem;
+  font-family: "Press Start 2P", system-ui;
+  color: var(--color-4);
+  background-color: var(--color-1);
+  cursor: pointer;
+  transition-duration: .5s;
+}
+
+#reset-btn:hover{
+  scale: 1.1;
+  background-color: var(--color-4);
+  color: var(--color-1);
+}
+/* end of restart button styling */
+
 /* start of media queries */
 @media screen and (max-width: 59.375em) {
     .game-body{
         width: 100vw;
-        height: 100%;
+        height: 100vh;
     }
 }
 

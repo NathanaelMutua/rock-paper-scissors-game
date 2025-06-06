@@ -34,37 +34,46 @@
         </div>
         <div class="game-info">
           <p>
-            Computer 
+            Computer
             <span id="computer-score">0</span>
             :
             <span id="player-score">0</span> Player
           </p>
         </div>
       </header>
-      <section class="gameplay computer-gameplay">
-        <p>Computer</p>
-        <div class="gameplay-wrapper">
-          <span id="computer-emoji">&#x270A;</span>
-        </div>
-      </section>
-      <section class="gameplay-info">
-        <p id="gameplay-info-text">Currently Draw</p>
-      </section>
-      <section class="gameplay player-gameplay">
-        <p>Player</p>
-        <div class="gameplay-wrapper">
-          <span id="player-emoji">&#x270A;</span>
-        </div>
-      </section>
-      <section class="game-actions">
-        <div class="game-actions-wrapper">
-          <span class="rock-emoji" onclick="playGame('rock')">&#x270A;</span>
-        </div>
-        <div class="game-actions-wrapper">
-          <span class="paper-emoji" onclick="playGame('paper')">&#x270B;</span>
-        </div>
-        <div class="game-actions-wrapper">
-          <span class="scissors-emoji" onclick="playGame('scissors')">&#9996;</span>
+      <section class="game-sub-body">
+        <section class="gameplay computer-gameplay">
+          <p>Computer</p>
+          <div class="gameplay-wrapper">
+            <span id="computer-emoji">&#x270A;</span>
+          </div>
+        </section>
+        <section class="gameplay-info">
+          <p id="gameplay-info-text">Currently Draw</p>
+        </section>
+        <section class="gameplay player-gameplay">
+          <p>Player</p>
+          <div class="gameplay-wrapper">
+            <span id="player-emoji">&#x270A;</span>
+          </div>
+        </section>
+        <section class="game-actions">
+          <div class="game-actions-wrapper">
+            <span class="rock-emoji" onclick="playGame('rock')">&#x270A;</span>
+          </div>
+          <div class="game-actions-wrapper">
+            <span class="paper-emoji" onclick="playGame('paper')"
+              >&#x270B;</span
+            >
+          </div>
+          <div class="game-actions-wrapper">
+            <span class="scissors-emoji" onclick="playGame('scissors')"
+              >&#9996;</span
+            >
+          </div>
+        </section>
+        <div class="game-reset-btn">
+          <button id="reset-btn">RESTART</button>
         </div>
       </section>
     </section>
