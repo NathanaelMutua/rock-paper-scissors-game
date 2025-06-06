@@ -1,11 +1,12 @@
+const gameplayInfoText = document.getElementById("gameplay-info-text")
+const playerEmoji = document.getElementById("player-emoji");
+const computerEmoji = document.getElementById("computer-emoji");
+const choices = ["rock", "paper", "scissors"];
+const gameReset = document.getElementById("reset-btn");
 let computerScore = document.getElementById("computer-score");
 let playerScore = document.getElementById("player-score");
 let playerScoreCount = 0;
 let computerScoreCount = 0;
-let gameplayInfoText = document.getElementById("gameplay-info-text")
-let playerEmoji = document.getElementById("player-emoji");
-let computerEmoji = document.getElementById("computer-emoji");
-const choices = ["rock", "paper", "scissors"];
 
 function playGame(playerChoice){
     let computerChoice = choices[Math.trunc(Math.random() * 3)];
@@ -61,3 +62,8 @@ function playGame(playerChoice){
 
     }
 }
+
+gameReset.addEventListener("click", () => {
+    playerScore.innerHTML = `0`;
+    computerScore.innerHTML = `0`;
+})
