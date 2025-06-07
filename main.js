@@ -10,8 +10,8 @@ let computerScoreCount = 0;
 
 // function to reset the game to score 0:0
 function resetGame(){
-    computerScore.innerHTML = `0`;
-    playerScore.innerHTML = `0`;
+    computerScore.textContent = "0";
+    playerScore.textContent = "0";
     gameReset.classList.add("reset-button-disabled");
 }
 
